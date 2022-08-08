@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    background: linear-gradient(45deg, #352c3d, #0e0520);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(foto\ de\ fundo.jpg);
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+main.container {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background: rgb(241, 241, 241);
+    color: rgb(0, 4, 7);
+    min-width: 530px;
+    min-height: 80vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.input-field input {
+    margin-top: 10px;
+}
+
+
+main h2 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+}
+
+main h4 {
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    position: relative;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #6c6870, #070113);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus~.underline::after {
+    transform: scaleX(1);
+}
+
+.input-field input {
+    outline: none;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.input-field input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+select {
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 100%;
+    background: linear-gradient(to left, #394c7c, #2e2d2e);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #394c7c, #2e2d2e);
+}
+
+
+form input[TYPE="reset"] {
+    margin-top: 1rem;
+    padding: 0.4rem;
+    width: 100%;
+    background: linear-gradient(to left, #394c7c, #2e2d2e);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+
+}
+
+form input[TYPE="reset"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #394c7c, #2e2d2e);
+}
+
+
+.urgencia {
+    margin-top: 25px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.footer span {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footer span a:link {
+    text-decoration: none;
+}
+
+.footer span a:hover {
+    color: grey;
+    transition: all 0.3s ease;
+
+}
+
+footer span .esqueceuasenha {
+    margin-right: 10%;
+}
+
+footer span .cadastrar {
+    margin-right: 10%;
+}
+
+
+.footer .social-field {
+    padding: 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.footer .social-field a i {
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+.footer .social-field a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .social-field a:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    letter-spacing: 0.3px;
+}
+
+.inpult-field-two {
+    margin-top: 7px;
+}
+
+
+.footer .social-field.twitter {
+    background: linear-gradient(to right, #56a7f2, #468aca);
+}
+
+.footer .social-field.Linkedin {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+}

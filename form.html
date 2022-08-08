@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+    <title>Formulario_Project</title>
+    <link rel="stylesheet" href="exempl.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h2>Formulario</h2>
+        <h4>Preenchimento de Rota de Motorista.</h4>
+        <form method="post" action="processa.php">
+            <div class="input-field">
+                <label id="label_nome">Nome</label>
+                <input type="text" name="username" placeholder="Digite o nome do Solicitante" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <label>DATA REQUERIDA</label>
+                <input type="date" name="date" id="password" placeholder="" required>
+                <div class="underline"></div>
+            </div>
+
+            <div class="urgencia">
+                <font color="red">
+                    &diams;</font>&nbsp;<label id="labelurgencia" for="urgencia">Qual o Nivel da Urgência</label>
+
+                <select name="opcao" required>
+                    <option value="nivel_3">Muito Urgente</option>
+                    <option value="nivel_2" selected>Urgente</option>
+                    <option value="nivel_1">Pouco Urgente</option>
+                </select>
+            </div>
+            <BR>
+
+            <diV class="inpult-field-two">
+                <div class="input-field">
+                    <label id="labeltelefone" for="TELEFONE">Telefone: </label>
+                    <input type="tel" name="telefone" placeholder="(81)9XXXX-XXXX" required>
+                    <div class="underline"></div>
+                </div>
+                <div class="input-field">
+                    <label id="labelpedidoparcial">Pedido Parcial</label>
+                    <input type="textarea" name="pedidoparcial" placeholder="">
+                    <div class="underline"></div>
+                </div>
+                <br>
+                <div class="input-field">
+                    <label id="labelpedidototal">Pedido Total</label>
+                    <input type="text" id="funcionario" name="pedidototal" placeholder="">
+                    <div class="underline"></div>
+                </div>
+                <br>
+                <div class="input-field">
+                    <label>Nota Fiscal</label>
+                    <input type="text" id="notafiscal" placeholder="" name="notalfiscal">
+                    <div class="underline"></div>
+
+                </div>
+            </diV>
+            <diV>
+                <input type="submit" onclick="enviar()" value="ENVIAR">
+                <input type="reset" onclick="deletar()" value="APAGAR">
+            </diV>
+        </form>
+
+
+
+
+        </div>
+    </main>
+    <script src="js.js"></script>
+</body>
+
+</html>
